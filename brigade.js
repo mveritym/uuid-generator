@@ -9,6 +9,7 @@ events.on("myevent", (brigadeEvent, project) => {
 
   // Now we want it to run these commands in order:
   node.tasks = [
+    "ls",
     "cd /src/app",
     "pip install -r requirements.txt",
     "cd /src/",
